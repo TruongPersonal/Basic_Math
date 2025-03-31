@@ -1,4 +1,4 @@
-# Basic Math
+# Basic Math Form 📜
 
 ## Overview
 Basic Math is a simple Java Swing application that allows users to perform basic arithmetic operations: addition, subtraction, multiplication, and division. The application provides a user-friendly interface with input validation and real-time error messages.
