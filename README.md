@@ -23,6 +23,9 @@ Basic Math is a simple Java Swing application that allows users to perform basic
    - Open `BasicMathForm.java`.
    - Click **Run** or press `Ctrl + F11` on Windows or `Command + F11` on MacOS to execute the program.
 
+## Layout
+![How to Run](./images/Form_layout.png)
+
 ## Usage
 1. Enter **two numbers** in the provided input fields.
 2. Click the corresponding operation button (**Sum, Difference, Product, Quotient**).
