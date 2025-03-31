@@ -9,7 +9,6 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
-import java.math.BigDecimal;
 import java.awt.event.ActionEvent;
 import java.awt.Color;
 import java.awt.Font;
@@ -72,7 +71,11 @@ public class BasicMathForm extends JFrame {
 	    int decimalPlacesSecond = isSecondInteger ? 0 : String.valueOf(numSecond).split("\\.")[1].length();
 	    int maxDecimalPlaces = Math.max(decimalPlacesFirst, decimalPlacesSecond);
 
-	    if (isDivision) {
+		if (isDivision) {
+	    	boolean isResultInteger = (result % 1 == 0);
+	    	if (isResultInteger) {
+	    		return String.valueOf((long) result);
+	    	}
 	        return String.valueOf(result);
 	    }
 	    if (isFirstInteger && isSecondInteger) {
